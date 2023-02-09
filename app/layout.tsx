@@ -1,4 +1,7 @@
 import "./globals.css";
+import Provider from "@/components/chakraprovider";
+import TopNavbar from "@/components/topNavbar";
+import BottomNavbar from "@/components/bottomNavbar";
 
 export default function RootLayout({
   children,
@@ -8,7 +11,15 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body>
+        <div>
+          <Provider>
+            <TopNavbar />
+            <BottomNavbar />
+            {children}
+          </Provider>
+        </div>
+      </body>
     </html>
   );
 }

@@ -62,7 +62,7 @@ export default function BottomNavbar() {
             <Image src={youtube} alt="youtube logo" />
           </Link>
         </HStack>
-        <InputGroup maxW="40" size="sm">
+        <InputGroup maxW="40" size="sm" display={["none", "none", "flex"]}>
           <Input
             _active={{ borderColor: "light.2" }}
             borderColor="light.3"
@@ -73,14 +73,14 @@ export default function BottomNavbar() {
             <Icon as={SearchIcon} />
           </InputRightElement>
         </InputGroup>
-        <Box>
-          <Text fontSize="small">
+        {/* <Box display={["none", "flex"]}>
+          <Text as="h6" fontSize="small">
             made with ❤️ by{" "}
             <Link href="http://www.github.com/SheryConcepts">
               <Text textDecorationLine="underline">Sheharyar Ahmed</Text>
             </Link>
           </Text>
-        </Box>
+        </Box> */}
       </HStack>
     </Box>
   );

@@ -10,7 +10,6 @@
   --dark-4: #424549;
 }
 
-.container {
-  max-width: 1080px;
-  margin: auto;
+.outline-item p {
+  margin-bottom: 15px;
 }
